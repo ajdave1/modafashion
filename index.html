@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda Vita</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/mobileview.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>
+                Moda Vita
+            </h1>
+            <p>fashion life</p>
+        </div>
+        <div class="ul-container">
+            <ul>
+                <li>
+                    <a href="shop.html">Explore</a>
+                </li>
+                <li>
+                    <a href="#">Favorites</a>
+                </li>
+                <li>
+                    <a href="#">My account</a>
+                </li>
+                <li>
+                    <a href="#">Track order</a>
+                </li>
+            </ul>
+
+            <div class="checkout-container">
+
+            </div>
+            <div class="checkout">
+                <div class="search">
+                    <button class="bx bx-search" id="search-input">
+                    </button>
+                </div>
+                <div class="cart-button">
+                    <span class="bx bx-cart-alt"></span>
+                    <p class="cart-quantity"></p>
+                </div>
+                <p class="bx bx-x close-mobile-nav"></p>
+            </div>
+        </div>
+
+
+        <div class="mobile-buttons">
+
+            <p class="bx bx-search" id="searchbutton1">
+
+            </p>
+            <p class="bx bx-menu" id="open-mobile-nav">
+
+            </p>
+        </div>
+
+
+    </nav>
+    <main class="landing-page">
+        <div class="landing-image"></div>
+        <div class="landing-button">
+            <button onclick="document.location='shop.html'">Shop Now</button>
+
+        </div>
+        <div class="overlay"></div>
+    </main>
+    <section class="landing-shop">
+        <div class="header">
+            <p id="landing-heading">New Arrivals</p>
+            <p class="view-all-products">View all products</p>
+
+        </div>
+
+
+        <main class="quick-view hide-item">
+
+            <div class="quick-view-container">
+
+
+
+            </div>
+        </main>
+
+    </section>
+
+    <div class="notification">
+
+    </div>
+    <section class="cart-container hide-item">
+        <div class="cart-item-container">
+            <div class="cart-item-container-upper">
+                <h3>Cart <span>(23 items)</span></h3>
+                <span class="bx bx-x" id="close-cart"></span>
+            </div>
+            <div class="items-container">
+                <!-- <div class="cart-item">
+                    <div class="cart-item-image"><img src="./assets/cap.jpg" alt=""></div>
+                    <div class="cart-item-details">
+                        <p class="cart-item-name">Moda custom</p>
+                        <p class="cart-item-price"><span class="currency">NGN</span> 30000</p>
+                        <p>Quantity 4</p>
+                    </div>
+                    <div class="remove-cart-item-btn">remove</div>
+                </div>
+                -->
+                <h4>Your cart is empty<h4>
+            </div>
+
+            <div class="cart-item-container-lower">
+                <div class="cart-item-total">
+                    <div>Total</div>
+                    <div><span class="currency">NGN</span>30000
+                    </div>
+                </div>
+                <button class="checkout-button">Proceed to checkout</button>
+            </div>
+        </div>
+    </section>
+    <div class="search-now-container hide-item">
+        <div class="close-search-now">
+
+        </div>
+        <div class="search-now">
+            <div class="search-now-inputs">
+                <input type="search" autofocus>
+                <button>search</button>
+            </div>
+            <div class="search-now-results">
+                <div>
+
+
+                    <h4>Category</h4>
+                    <ul>
+                        <li>Roundnecks</li>
+                        <li>T-shirts</li>
+                        <li>Trousers</li>
+                        <li>Caps</li>
+                    </ul>
+                </div>
+                <div>
+
+
+                    <h4>
+                        Products
+                    </h4>
+                    <ul>
+                        <li>Moda vita cosut</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="footer-navigation">
+
+        </div>
+    </footer>
+    <script type="module" src="./script/index.js"></script>
+
+</body>
+
+</html>

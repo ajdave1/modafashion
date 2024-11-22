@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moda Vita</title>
+  <link rel="stylesheet" href="/css/moda.css" />
+  <link rel="stylesheet" href="/css/cart.css" />
+ 
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="/assets/logo.png" class="logo-img" />
+    </div>
+    <ul>
+      <li>
+        <a id="shop-btn">Shop</a>
+      </li>
+      <li>
+        <a href="account.html">My account</a>
+      </li>
+      <li>
+        <a href="/"> Track Order</a>
+      </li>
+    </ul>
+
+    <div class="nav-right-container">
+      <div class="search-container">
+        <input type="search" placeholder="search products..." id="search" />
+        <i class="bx bx-search" id="search-btn"></i>
+      </div>
+      <div><i class="bx bx-user"></i></div>
+      <div><i class="bx bx-cart-alt open-cart"></i>
+        <div class="cart-count"></div>
+      </div>
+
+    </div>
+    </div>
+  </nav>
+  <section class="products-display view-item">
+    <div class="product-dis1">
+      <img src="/assets/Gorilla white.png" />
+    </div>
+    <div class="product-dis2">
+      <img src="/assets/Clothe like gorilla .png" />
+    </div>
+    <div class="overlay"></div>
+    <button class="display-button">See what's new </button>
+  </section>
+  <main class="shop-testing">
+
+  </main>
+  <div class="cart">
+    <div class="cart-icons">
+      <div class="cart-head">
+        <h2>Cart</h2>&nbsp;<i class="bx bx-cart"></i><span class="cart-count2"></span>
+      </div>
+
+      <div class="bx bx-x close-cart"></div>
+    </div>
+    <div class="carts">
+    </div>
+
+
+
+    <button id="checkout-btn">checkout</button>
+  </div>
+  <script src="/javascript/cart.js"></script>
+  <script type="module" src="/javascript/moda.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: none;
+  margin: 0;
+  padding: 0;
+  --border-radius: 8px;
+  --primary-color: #f7f7f7;
+  --secondary-color: #333333;
+  --accent-color: rgb(187, 187, 187);
+}
+.landing-shop {
+  border-top: 1.5px solid rgb(172, 170, 170);
+}
+@media screen and (max-width: 685px) {
+  .landing-shop {
+    padding-top: 100px;
+  }
+}
