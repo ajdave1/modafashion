@@ -26,7 +26,6 @@
     display: flex;
     padding: 40px 20px;
     z-index: 10000;
-    height: 100%;
     align-items: start;
     padding: 20px;
     width: 60vw;
@@ -190,6 +189,7 @@
   .search-now {
     background-color: white;
     width: 90%;
+    margin-top: 50%;
     padding: 40px 10px;
     justify-content: space-between;
     align-items: start;
@@ -199,6 +199,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    max-height: 100%;
   }
   .search-now-inputs {
     width: 80%;
