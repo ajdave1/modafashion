@@ -336,6 +336,8 @@ nav ul li a {
 }
 .quantity {
   display: flex;
+  color: black;
+
   align-items: center;
   justify-content: center;
   border-top: 1.5px solid var(--accent-color);
@@ -346,6 +348,7 @@ nav ul li a {
   padding: 4px;
   background-color: white;
   cursor: pointer;
+  color: black;
 }
 .cart-container {
   background-color: rgba(0, 0, 0, 0.749);
