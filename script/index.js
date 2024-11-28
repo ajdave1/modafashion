@@ -67,34 +67,34 @@ viewButtons.forEach((button) => {
   
                 <div class="quick-view-buttons">
                   <select id="quantity">
-                   <option>
+                   <option value = 1>
                   1
                   </option>
-                  <option>
+                  <option value = 2>
                   2
                   </option>
- <option>
-                 3
-                  </option>
-                   <option>
+                 <option value = 3>
+                  3
+                 </option>
+                   <option value = 4>
                   4
                   </option>
-                   <option>
+                   <option value = 5>
                   5
                   </option>
-                   <option>
+                   <option value = 6>
                   6
                   </option>
-                   <option>
+                   <option value = 7>
                   7
                   </option>
-                   <option>
+                   <option value = 8>
                   8
                   </option>
-                   <option>
+                   <option  value = 9>
                   9
                   </option>
-                   <option>
+                   <option value = 10>
                   10
                   </option>
                   </select>
@@ -121,6 +121,8 @@ viewButtons.forEach((button) => {
         const id = btn.dataset.productId;
         let existingItem;
         let itemsize = document.querySelector(".size");
+        let buyingquantity = document.querySelector("#quantity");
+        buyingquantity = Number(buyingquantity.value);
         cart.map((el) => {
           if (el.id === id) {
             existingItem = el;
@@ -128,7 +130,7 @@ viewButtons.forEach((button) => {
         });
 
         if (existingItem) {
-          existingItem.quantity++;
+          existingItem.quantity += buyingquantity;
           existingItem.size.push(itemsize.value);
           notify("success", "cart updated", "bx bx-check-circle ");
           console.log(cart);
@@ -140,7 +142,8 @@ viewButtons.forEach((button) => {
           notify("error", "Please select a size");
           return;
         }
-        cart.push({ id, quantity: 1, size: [itemsize.value] });
+
+        cart.push({ id, quantity: buyingquantity, size: [itemsize.value] });
         notify("success", "Added to cart", "bx bx-check-circle ");
         console.log(cart);
         showcartQuantity(cart);
@@ -198,3 +201,4 @@ opennav.addEventListener("click", () => {
 closenav.addEventListener("click", () => {
   mobilenav.style = "right:-500px";
 });
+ 
