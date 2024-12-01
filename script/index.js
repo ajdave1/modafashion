@@ -82,21 +82,7 @@ viewButtons.forEach((button) => {
                    <option value = 5>
                   5
                   </option>
-                   <option value = 6>
-                  6
-                  </option>
-                   <option value = 7>
-                  7
-                  </option>
-                   <option value = 8>
-                  8
-                  </option>
-                   <option  value = 9>
-                  9
-                  </option>
-                   <option value = 10>
-                  10
-                  </option>
+             
                   </select>
                 </div>
                 <div class="quick-view-price">
@@ -174,7 +160,14 @@ document.getElementById("close-cart").addEventListener("click", () => {
 function rendercartitems() {
   const itemcontainer = document.querySelector(".items-container");
   itemcontainer.innerHTML = " ";
+
   cart.forEach((item) => {
+    let sizes = " ";
+
+    item.size.forEach((size) => {
+      sizes += `- ${size} `;
+    });
+    console.log(sizes);
     products.forEach((p) => {
       if (item.id == p.id) {
         itemcontainer.innerHTML += `<div class="cart-item">
@@ -182,7 +175,12 @@ function rendercartitems() {
                     <div class="cart-item-details">
                         <p class="cart-item-name">${p.productName}</p>
                         <p class="cart-item-price"><span class="currency">NGN</span> ${p.price}</p>
-                        <p>Q-${item.quantity}</p>
+                        <div class="quantityandsize">
+                         <p>Q - ${item.quantity}</p> <p>Size(s) ${sizes}</p>
+                        
+                        </div>
+                    
+                       
                     </div>
                     <div class="remove-cart-item-btn" data-cart-id="${item.id}">remove</div>
                 </div>`;
@@ -201,4 +199,3 @@ opennav.addEventListener("click", () => {
 closenav.addEventListener("click", () => {
   mobilenav.style = "right:-500px";
 });
- 

@@ -527,3 +527,18 @@ footer {
   z-index: -10;
   height: 100%;
 }
+.quantityandsize {
+  font-size: 14px;
+  text-transform: lowercase;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1.5px solid var(--accent-color);
+  padding: 3px 6px;
+  color: rgb(90, 90, 90);
+}
+.quantityandsize p {
+  max-width: 80%;
+  display: flex;
+  flex-wrap: nowrap;
+}
